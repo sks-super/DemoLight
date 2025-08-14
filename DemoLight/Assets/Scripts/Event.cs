@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace Platformer.Gameplay
 {
-    public abstract class ButtonEvent : MonoBehaviour
+    public abstract class Event : MonoBehaviour
     {
         public abstract void Trigger();
     }

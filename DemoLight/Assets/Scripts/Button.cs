@@ -8,8 +8,8 @@ public class Button : MonoBehaviour
     public enum TriggerMode { OnRelease, OnRepress }
 
     [SerializeField] TriggerMode mode = TriggerMode.OnRelease;
-    [SerializeField] ButtonEvent[] onPressEvents;
-    [SerializeField] ButtonEvent[] onReleaseEvents;
+    [SerializeField] Platformer.Gameplay.Event[] onPressEvents;
+    [SerializeField] Platformer.Gameplay.Event[] onReleaseEvents;
 
     private readonly HashSet<Collider2D> pressingObjects = new();
     private bool isPressed;

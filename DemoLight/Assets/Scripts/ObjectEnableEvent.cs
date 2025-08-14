@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Platformer.Gameplay
 {
-    public class ObjectEnableEvent : ButtonEvent
+    public class ObjectEnableEvent : Event
     {
         [SerializeField] GameObject targetObject;
         [SerializeField] bool desiredState = true;
